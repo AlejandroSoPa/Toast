@@ -22,6 +22,12 @@ public class myActivity extends AppCompatActivity {
     private int contador = 0;
     private String editTextName1;
 
+    static ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
+
+    static public ArrayList<Usuario> getUsuarios() {
+        return usuarios;
+    }
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
